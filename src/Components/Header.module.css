@@ -1,0 +1,27 @@
+.header {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: white;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.login {
+  color: #333
+}
+.login::after {
+  content: '';
+  width: 14px;
+  display: inline-block;
+  height: 17px;
+  background: url('../Assets/usuario.svg') no-repeat center center;
+  margin-left: 0.5rem;
+}

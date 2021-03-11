@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 import {ReactComponent as DogImg} from '../Assets/dogs.svg';
 
 const Header = () => {
-  const {userInfos, isLogged, logout} = useContext(UserContext);
+  const {userInfos, isLogged} = useContext(UserContext);
 
   return (
     <header className={styles.header}>
@@ -16,7 +16,6 @@ const Header = () => {
         {isLogged ? (
           <Link to="/account" className={styles.login}>
             {userInfos && userInfos.nome}
-            <button onClick={logout}>Sair</button>
           </Link>
         ) : (
           <Link to="/login" className={styles.login}>
